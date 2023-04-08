@@ -1,0 +1,15 @@
+﻿@{
+    string PageTitle = "Index Page";
+    string[] liste = { "ilker", "turan", "istanbul", "londra", "norveç", "karnı kara" };
+}
+<h2>@PageTitle</h2>
+<h3>ID: @ViewBag.Id</h3>
+<ol>
+    @foreach (var item in liste)
+    {
+        <li>@item</li>
+    }
+</ol>
+
+@Html.Partial("_TeamMembersPartial")
+
